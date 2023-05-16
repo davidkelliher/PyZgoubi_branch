@@ -67,7 +67,7 @@ from zgoubi.settings import zgoubi_settings
 
 zlog.setLevel(zgoubi_settings['log_level'])
 
-sys.setcheckinterval(10000)
+sys.setswitchinterval(10000)#sys.setcheckinterval() deprecated in python3.2
 
 zgoubi_module_path = os.path.dirname(os.path.realpath(__file__))
 # something like
